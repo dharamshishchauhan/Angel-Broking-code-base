@@ -426,44 +426,4 @@ class AngelBroking:
             logging.error(f'tradebook empty order squaring off {e}')
 
 
-ab1=AngelBroking("FOicAB6B","CEZT6ZWWQSXWGA6LICZRZHTTHQ","D90026",1503)
-ab1.market_over_close_all_order()
-#print(ab1.smart.tradeBook())
-#ak=ab1.get_order_status(order_id=250227000870442)
-#ak=ab1.option_symbol_finding(ltp_script=48743,step_vallue=100,ce_or_pe='CE',name='BANKNIFTY',no_of_expiry_ahead=0,select_atm_itm_otm='OTM',inside_outside=4)
-#ab1.market_over_close_all_order()
-#print(ab1.no_of_order())
-#id1=ab1.stock_delivery_order(exchange='NSE',symbol='PNB-EQ', order_type='STOPLOSS_MARKET',transaction_type='BUY',qunatity=1,price=0,trigger_price=93.4,order_tag='class99')
-sleep(1)
-#print(id1)
-#ac=ab1.modify_order(order_id=250227000841619,price=0,trigger_price=93.8)
-#print(ac)
-#id2=ab1.find_order_id(tag='class99')
-#print(id2)
-#ab1.get_long_length_hist_datar(exchange='NSE',symbol='Nifty 50',interval='FIVE_MINUTE',from_date='2023-01-01',download_till_date='2025-02-25')
-#print(ab1.convert_symbol_to_token(name='pnb'))
-#print(ab1.lot_size(symbol='NIFTY27FEB2522600CE'))
-#print(ab1.get_fut_scripts(name_script='finnifty'))
-#df=ab1.short_term_histroical_data(symbol='Nifty 50',exchange='NSE', interval='FIVE_MINUTE')
 
-#ab1.intraday_order(name='pnb',exchange='NSE',order_type='STOPLOSS_LIMIT',transaction_type='BUY',qunatity=1,trigger_price=93.5,price=94)
-'''while True:
-    try:
-        d1=ab1.short_term_histroical_data(symbol='PNB-EQ',interval='ONE_MINUTE',exchange='NSE')
-        print(d1.tail(2))
-        sleep(1)
-    
-    except :
-        pass'''
-
-
-'''
-name='PNB'
-trading_sym=ab1.convert_name_to_symbol(name)
-symbol_tok=ab1.convert_symbol_to_token(name)
-print(trading_sym)
-print(symbol_tok)
-orderparams = {"variety": "STOPLOSS","tradingsymbol": trading_sym,"symboltoken": symbol_tok,"transactiontype": "BUY","exchange": "NSE","ordertype": "STOPLOSS_LIMIT","producttype": "INTRADAY","duration": "DAY","price": 94,"squareoff": "0","stoploss": 93.5,"quantity": 1}
-print('higy   look')
-ord=ab1.smart.placeOrder(orderparams)
-print('lastt  ', ord)'''
