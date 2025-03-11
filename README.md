@@ -1,3 +1,4 @@
+This code is for trading through API in angel broking. \
  Angel-Broking-code-base \
  All most every function is covered.\
  you can add more function, even you can improve this code based on your knowledge.\
